@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cookies</title>
+</head>
+<body>
+<!-- Erstelle ein Formular mit zwei (name = key und name = value) Input-Feldern (type = text) und einem Button -->
+<form action="#">
+	<input type="text" name="key" placeholder="Key">
+	<input type="text" name="value" placeholder="Value">
+	<!-- Erstelle ein weiteres Eingabe-Feld (name=expires) in welchem sich ein Datum für das Ablaufdatum des Cookies setzen lässt -->
+	<input type="date" name="expires" placeholder="Expires">
+	<label></label>
+	<button class="c-button js-save-button">Cookie Speichern</button>
+	<button class="c-button js-save-button-two-days">Cookie für 2 Tage speichern</button>
+	<br> <br>
+
+	<!-- Erstelle auf der Seite einen weiteren Button und einen Container, der mittels eines Klick-Listeners die Informationen aus den Cookies auslesen und jedes Cookie einzeln auflisten -->
+	<button class="c-button js-list-button"> Cookies Auflisten</button>
+	<div class="c-cookies"></div> <br> <br>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

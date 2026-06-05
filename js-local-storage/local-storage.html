@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Local Storage Example</title>
+</head>
+<body>
+
+<script>
+	//Registriere auf dieser Seite einen Event-Listener für den local Storage.
+	// Wenn das Event gefeuert wird soll der Farbwert aus dem Storage gelesen und als background-color im Styling des Bodies eingesetzt werden.
+	window.addEventListener('storage', (event) => {
+		document.body.style.backgroundColor = localStorage.getItem('color');
+	})
+</script>
+</body>
+</html>
