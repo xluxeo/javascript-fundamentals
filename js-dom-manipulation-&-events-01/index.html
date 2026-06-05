@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form class="c-form">
+	<fieldset class="c-form__fieldset">
+		<label class="c-form__label" for="name"><em>Name</em></label>
+		<input class="c-form__input" id="name" type="text" name="name" />
+	</fieldset>
+	<fieldset class="c-form__fieldset">
+		<label class="c-form__label"><em>Geschlecht</em></label>
+		<label class="c-form__label">
+			<input type="radio" name="gender" value="w" />
+			W
+		</label>
+		<label class="c-form__label">
+			<input type="radio" name="gender" value="m" />
+			M
+		</label>
+	</fieldset>
+	<fieldset class="c-form__fieldset">
+		<label class="c-form__label"><em>Hobbys</em></label>
+		<label class="c-form__label">
+			<input type="checkbox" value="Kochen" />
+			Kochen
+		</label>
+		<label class="c-form__label">
+			<input type="checkbox" value="Netflix" />
+			Netflix
+		</label>
+		<label class="c-form__label">
+			<input type="checkbox" value="Gartenarbeit" />
+			Gartenarbeit
+		</label>
+	</fieldset>
+	<button class="c-form__button" type="button">
+		Generate
+	</button>
+	<input class="c-form__button" type="reset" />
+</form>
+<blockquote class="c-form__blockquote">
+	??? mag gerne ???, ???
+</blockquote>
+
+<script src="script.js"></script>
+</body>
+</html>
