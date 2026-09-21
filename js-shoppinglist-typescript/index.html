@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping-List Typescript</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div class="c-shopping-list">
+	<h1>Shoppinglist</h1>
+	<div class="c-shopping-list__items">
+		<div class="c-shopping-list__item">
+			<label for="item">Artikel:</label>
+			<input class="c-input" type="text" id="item" placeholder="Artikel eingeben">
+		</div>
+		<div class="c-shopping-list__item">
+			<label for="select">Kategorie:</label>
+			<select class="c-select" id="select">
+				<option value="">Wähle eine Kategorie</option>
+				<option value="Baumarkt">Baumarkt</option>
+				<option value="Elektronik">Elektronik</option>
+				<option value="Mode">Mode</option>
+				<option value="Lebensmittel">Lebensmittel</option>
+			</select>
+		</div>
+	</div>
+	<button class="c-button">Artikel hinzufügen</button>
+	<ul class="c-shopping-list__list" id="list"></ul>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
