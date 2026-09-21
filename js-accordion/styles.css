@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:500");
+body {
+	background: #ffecd9;
+	margin: 0;
+	padding: 1rem;
+	font: 1.25em Raleway, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.accordion {
+	border-radius: 10px;
+	background-color: #ddd;
+	color: #444;
+	padding: 18px;
+	margin-bottom: 1rem;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+.accordion--large {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.accordion--secondary {
+	background: linear-gradient(to right, #ee786e 0%, #fceeb5 50%, #a2ccb6 100%);
+}
+
+.is-active, .accordion:hover {
+	background-color: #ccc;
+}
+
+.is-active .accordion__content {
+	display: block;
+}
+
+.is-active .accordion__title {
+	cursor: zoom-out;
+}
+
+.accordion__content {
+	padding: 1rem;
+	background-color: rgba(255, 255, 255, 0.75);
+	display: none;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.accordion__title {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	cursor: zoom-in;
+}
+
+/* Buttons */
+button {
+	font-size: 1em;
+	-webkit-appearance: none;
+	background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+	background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+	background-size: 500%;
+	border: none;
+	border-radius: 5rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	color: #fff;
+	cursor: pointer;
+	height: 4rem;
+	letter-spacing: 0.05em;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 15rem;
+}
+
+button:hover {
+	animation-name: gradient;
+	-webkit-animation-name: gradient;
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0 50%;
+	}
+	100% {
+		background-position: 100%;
+	}
+}
