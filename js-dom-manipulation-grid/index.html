@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM Manipulation Grid</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2 class="c-message js-message"></h2>
+<div class="o-grid js-grid">
+	<div class="o-grid__item js-grid-item"><p>lorem</p></div>
+	<div class="o-grid__item js-grid-item"><p>lorem</p></div>
+	<div class="o-grid__item js-grid-item"><p>lorem</p></div>
+</div>
+<div>
+	<input name="itemname" class="c-input js-input" type="text" placeholder="Text für das neue Grid Item">
+	<select name="color" id="" class="js-color-select">
+		<option selected >Farbe wählen</option>
+		<option value="red">red</option>
+		<option value="blue">blue</option>
+		<option value="green">green</option>
+	</select>
+	<button class="c-button js-add-button" data-button="success">Ein Item mehr!</button>
+	<button class="c-button js-remove-button" data-button="warning">Ein Item weniger!</button>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
